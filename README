@@ -1,0 +1,19 @@
+protoplay
+=========
+
+Just a simple program to verify that protobuf-c makes copies of the data that
+it parses and doesn't point back into the original buffer. The program proves
+that and thus you can free() the buffer and use the unpacked proto structures
+independently.
+
+Requirements
+============
+
+ * protoc
+ * protobuf-c
+ * PALM (python)
+
+Using It
+========
+
+    make validate
